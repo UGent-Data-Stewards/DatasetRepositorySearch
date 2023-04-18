@@ -428,11 +428,11 @@ def main():
         zenodo(zenodoSearchTerms, fileIdentifier, zenodo_ACCESS_TOKEN)
     if osfID and osf_ACCESS_TOKEN:
         osf(osfID, fileIdentifier, osf_ACCESS_TOKEN) 
-    if pangaeaSearchTerms:
+    if pangaeaSearchTerms[0]:
         pangaea(pangaeaSearchTerms, fileIdentifier)
-    if figshareSearchTerms:
+    if figshareSearchTerms[0]:
         figshare(figshareSearchTerms, fileIdentifier)
-    if GBIFSearchTerms:
+    if GBIFSearchTerms[0]:
         GBIF(GBIFSearchTerms, fileIdentifier)
 
 if __name__ == "__main__":
