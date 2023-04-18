@@ -48,7 +48,7 @@ def datacite(ror, fileIdentifier):
             doiList.append(pythonObj['data'][num]['id'])
             num += 1
             numRecords += 1
-            print(f"\rDryad datasets extracted: {numRecords}", end='', flush=True)
+            print(f"\rDatacite datasets extracted: {numRecords}", end='', flush=True)
 
         try:
             currentPage = pythonObj['links']['next']
